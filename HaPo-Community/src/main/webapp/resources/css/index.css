@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+html, body {
+	margin: 0;
+}
+
+/****** 반응형 ******/
+/* Mobile */
+@media ( max-width :425px) {
+	.page-link {
+		padding: 10px 10px !important;
+	}
+}
+
+@media ( max-width :991px) {
+	section {
+		width: 95%;
+	}
+	.pc, .community, section>h2 {
+		display: none !important;
+	}
+	.inputWrap {
+		width: 80%;
+	}
+	.inputWrap>select {
+		width: 150px;
+	}
+	.inputWrap>input {
+		width: 100%;
+	}
+}
+
+/* PC */
+@media ( min-width :992px) and (max-width:1199px) {
+	section {
+		width: 92%;
+	}
+}
+
+@media ( min-width :1200px) and (max-width:1599px) {
+	section {
+		width: 80%;
+	}
+}
+
+@media ( min-width :1600px) {
+	section {
+		width: 70%;
+	}
+}
+
+@media ( min-width :992px) {
+	.m-community {
+		display: none;
+	}
+	.inputWrap>select {
+		width: 150px;
+	}
+	.inputWrap>input {
+		width: 500px;
+	}
+}
+
+/****** 메인 ******/
+section {
+	margin: auto;
+	margin-top: 65px;
+}
+
+section>h2 {
+	font-weight: bold;
+	padding-left: 17px;
+	margin-bottom: -10px;
+}
+
+.community {
+	text-align: center;
+	font-size: 15px;
+}
+
+input[type=checkbox] {
+	-ms-transform: scale(1.25);
+	/* IE */
+	-moz-transform: scale(1.25);
+	/* FF */
+	-webkit-transform: scale(1.25);
+	/* Safari and Chrome */
+	-o-transform: scale(1.25);
+	/* Opera */
+	padding: 5px;
+}
+
+.title {
+	cursor: pointer;
+	text-align: left;
+}
+
+/****** 모바일용 ******/
+th>span {
+	display: inline-block;
+	padding-left: 5px;
+	padding-top: 3px;
+}
+
+.m_title {
+	padding: 20px;
+}
+
+.m_title span {
+	display: inline-block;
+}
+
+.m_post-head {
+	position: relative;
+	margin-top: 4px;
+}
+
+.m_subject {
+	font-size: 16px;
+}
+
+.m_post-info {
+	overflow: hidden;
+	padding-top: 6px;
+	font-size: 14px;
+	color: #909090;
+	margin-bottom: 4px;
+}
+
+.m_writer, .m_date, .m_readCnt {
+	padding: 0 5px;
+}
+
+span.m_date {
+	font-size: 13px;
+}
+
+.m_writer {
+	padding-left: 0px;
+	padding-right: 2px;
+}
+
+.m_replyCnt {
+	padding: 2px 8px;
+	border: 1px solid #c7c7c7;
+	border-radius: 18px;
+	position: absolute;
+	right: 3px;
+	top: 11px;
+	font-size: 14px;
+	color: #e74337;
+}
+
+/****** 페이지네이션 ******/
+.paginationWrap {
+	font-size: 15px;
+}
+
+/****** 검색 ******/
+.searchWrap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.inputWrap {
+	display: flex;
+	margin-right: 5px;
+}
+
+.inputWrap>select {
+	height: 30px;
+	padding: 5px 10px;
+	font-size: 13px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	margin-right: 5px;
+}
+
+.inputWrap>input {
+	height: 31px;
+	padding: 5px 10px;
+	font-size: 14px;
+	line-height: 1.5;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+}
+
+#searchBtn {
+	background: none;
+	background-color: #4d6082;
+	border: none;
+	cursor: pointer;
+	padding: 8px;
+	border-radius: 3px;
+}
+
+#searchBtn>img {
+	width: 20px;
+}
+
+/*************메뉴**************/
+.dropdown:hover .dropdown-menu {
+	display: block;
+	margin-top: 0;
+}
