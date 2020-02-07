@@ -1,0 +1,43 @@
+html, body {
+	margin: 0;
+}
+
+section {
+	margin: auto;
+	margin-top: 65px;
+}
+
+.panel {
+	margin: 0 auto;
+	padding: 20px;
+	max-width: 480px;
+	border: 1px solid #d9d9d9;
+	border-radius: 6px;
+}
+
+.panel>p {
+	text-align: center;
+	padding-top: 8px;
+	font-size: 14.5px;
+}
+
+strong {
+	text-decoration: underline;
+}
+
+.panel-heading {
+	text-align: center;
+}
+
+.panel-body {
+	margin-bottom: 13px;
+}
+
+.warn {
+	display: none;
+	color: #ff6e6e;
+	font-size: 14px;
+	text-align: left;
+	font-weight: 400;
+	padding: 5px 0 0 5px;
+}

@@ -26,4 +26,27 @@ public class HomeController {
 		return "boardView";
 	}
 	
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	public String login(Model model) {
+		
+		return "login";
+	}
+	
+	@RequestMapping(value = "/join", method = RequestMethod.GET)
+	public String join(Model model) {
+		
+		return "join";
+	}
+	
+	@RequestMapping(value = "/user/find", method = RequestMethod.GET)
+	public String findAccount(Model model) {
+		
+		return "findAccount";
+	}
+	
+	@RequestMapping(value = "/user/change", method = RequestMethod.GET)
+	public String changePassword(Model model) {
+		
+		return "changePassword";
+	}
 }

@@ -1,0 +1,60 @@
+html, body {
+	margin: 0;
+}
+
+section {
+	margin: auto;
+	margin-top: 65px;
+}
+
+.panel {
+	margin: 0 auto;
+	padding: 20px;
+	max-width: 480px;
+	border: 1px solid #d9d9d9;
+	border-radius: 6px;
+}
+
+.panel-heading {
+	text-align: center;
+}
+
+.panel-body {
+	margin-bottom: 13px;
+}
+
+.warn {
+	display: none;
+	color: #ff6e6e;
+	font-size: 14px;
+	text-align: left;
+	font-weight: 400;
+	padding: 5px 0 0 5px;
+}
+
+/********* or 선 **********/
+.login-or {
+	position: relative;
+	color: #a0a0a0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.span-or {
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: -2px;
+	margin-left: -25px;
+	background-color: #fff;
+	width: 50px;
+	text-align: center;
+}
+
+.hr-or {
+	height: 1px;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
