@@ -78,6 +78,10 @@ section>h2 {
 	font-size: 15px;
 }
 
+.board-title {
+	width: 50%;
+}
+
 input[type=checkbox] {
 	-ms-transform: scale(1.25);
 	/* IE */
@@ -157,7 +161,7 @@ span.m_date {
 }
 
 /****** 검색 ******/
-.searchWrap {
+/* .searchWrap {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -197,7 +201,7 @@ span.m_date {
 
 #searchBtn>img {
 	width: 20px;
-}
+} */
 
 /*************메뉴**************/
 .dropdown:hover .dropdown-menu {

@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+html, body {
+	margin: 0;
+}
+
+section {
+	margin: auto;
+	margin-top: 65px;
+}
+
+.panel {
+	margin: 0 auto 20px;
+	padding: 20px;
+	max-width: 480px;
+	border: 1px solid #d9d9d9;
+	border-radius: 6px;
+}
+
+.panel-heading {
+	text-align: center;
+}
+
+.panel-body label {
+	font-weight: bold;
+}
+
+.warn {
+	display: none;
+	color: #ff6e6e;
+	font-size: 14px;
+	text-align: left;
+	font-weight: 400;
+	padding: 5px 0 0 5px;
+}
+
+/********* 기숙사 선택 버튼 *********/
+.radio-group {
+	text-align: center;
+}
+
+.radio-img {
+	margin: 0 6px;
+}
+
+.radio-img>input {
+	display: none;
+}
+
+.radio-img>img {
+	width: 90px;
+	cursor: pointer;
+	border: 2px solid transparent;
+}
+
+.radio-img>input:checked+img {
+	border: 2px solid orange;
+}
