@@ -67,29 +67,24 @@
 			<div class="panel-body">
 				<form>
 					<div class="form-group">
-						<label for="userId">아이디</label> <input type="text"
-							class="form-control" id="userId">
-						<div class="invalid-feedback">Please choose a username.</div>
+						<label for="userId">아이디</label> <input type="text" class="form-control" id="userId">
 					</div>
 					<div class="form-group">
-						<label for="userPassword">비밀번호</label> <input type="password"
-							class="form-control" id="userPassword"
-							placeholder="영문+숫자 조합으로 8자 이상"> <span
-							class="warn password">영문+숫자 조합으로 8자 이상 입력해주세요.</span>
+						<label for="userPassword">비밀번호</label>
+						<input type="password" class="form-control" id="userPassword" placeholder="영문+숫자 조합으로 8자 이상">
+						<span class="warn password">영문+숫자 조합으로 8자 이상 입력해주세요.</span>
 					</div>
 					<div class="form-group">
-						<label for="confirmPw">비밀번호 확인</label> <input type="password"
-							class="form-control" id="confirmPw"> <span
-							class="warn confirm">비밀번호가 다릅니다. 다시 입력하세요.</span>
+						<label for="confirmPw">비밀번호 확인</label> <input type="password" class="form-control" id="confirmPw"> 
+							<span class="warn confirm">비밀번호가 다릅니다. 다시 입력하세요.</span>
 					</div>
 					<div class="form-group">
-						<label for="userEmail">이메일</label> <input type="email"
-							class="form-control" id="userEmail"> <span
-							class="warn email">잘못된 이메일 형식입니다.</span>
+						<label for="userNickname">닉네임</label>
+						<input type="password" class="form-control" id="userNickname">
 					</div>
 					<div class="form-group">
-						<label for="userNickname">닉네임</label> <input type="password"
-							class="form-control" id="userNickname">
+						<label for="userEmail">이메일</label> <input type="email" class="form-control" id="userEmail">
+						<span class="warn email">잘못된 이메일 형식입니다.</span>
 					</div>
 					<button type="submit" class="btn btn-primary btn-block join">회원가입</button>
 				</form>
@@ -99,8 +94,8 @@
 				<span class="span-or">or</span>
 			</div>
 			<div class="social-login">
-				<a href="" class="btn btn-block btn-outline-danger"> <i
-					class="fab fa-facebook-f"></i>   Google로 회원가입
+				<a href="" class="btn btn-block btn-outline-danger">
+					<i class="fab fa-facebook-f"></i>   Google로 회원가입
 				</a>
 			</div>
 		</div>

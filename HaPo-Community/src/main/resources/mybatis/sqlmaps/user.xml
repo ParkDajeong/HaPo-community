@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mybatis.sqlmaps.user">
+	<insert id="insertUser" parameterType="java.util.HashMap">
+		INSERT INTO user(
+			id,
+			password,
+			nickname,
+			email,
+			house
+		) VALUES (
+			#{id},
+			#{password},
+			#{nickname},
+			#{email}
+		)
+	</insert>
+	<select id="selectUser">
+		SELECT 
+	</select>
+</mapper>
