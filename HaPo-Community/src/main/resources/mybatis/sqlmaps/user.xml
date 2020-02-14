@@ -6,8 +6,7 @@
 			id,
 			password,
 			nickname,
-			email,
-			house
+			email
 		) VALUES (
 			#{id},
 			#{password},
@@ -15,7 +14,44 @@
 			#{email}
 		)
 	</insert>
-	<select id="selectUser">
-		SELECT 
+	<select id="selectUserId" parameterType="java.util.HashMap" resultType="Integer">
+		SELECT EXISTS (
+			SELECT
+				id
+			FROM
+				user
+			WHERE
+				id = #{id}
+		)
+	</select>
+	<select id="selectUserNickname" parameterType="java.util.HashMap" resultType="Integer">
+		SELECT EXISTS (
+			SELECT
+				nickname
+			FROM
+				user
+			WHERE
+				nickname = #{nickname}
+		)
+	</select>
+	<select id="selectUserEmail" parameterType="java.util.HashMap" resultType="Integer">
+		SELECT EXISTS (
+			SELECT
+				email
+			FROM
+				user
+			WHERE
+				email = #{email}
+		)
+	</select>
+	<select id="selectUser" parameterType="java.util.HashMap" resultType="Integer">
+		SELECT EXISTS (
+			SELECT
+				*
+			FROM
+				user
+			WHERE
+				id = #{id} AND password = #{password}
+		)
 	</select>
 </mapper>

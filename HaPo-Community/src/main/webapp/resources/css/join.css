@@ -23,6 +23,10 @@ section {
 	margin-bottom: 13px;
 }
 
+.form-group {
+	height: 87.5px;
+}
+
 .warn {
 	display: none;
 	color: #ff6e6e;

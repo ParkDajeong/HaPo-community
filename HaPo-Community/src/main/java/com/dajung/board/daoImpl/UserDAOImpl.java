@@ -15,8 +15,28 @@ public class UserDAOImpl implements UserDAO {
 	private SqlSession sqlSession;
 
 	@Override
-	public int insertUser(Map<String, Object> paramMap) {
-		return sqlSession.insert("inserUser", paramMap);
+	public int setUser(Map<String, Object> paramMap) {
+		return sqlSession.insert("insertUser", paramMap);
+	}
+
+	@Override
+	public int checkUserId(Map<String, Object> paramMap) {
+		return sqlSession.selectOne("selectUserId", paramMap);
+	}
+
+	@Override
+	public int checkUserNickname(Map<String, Object> paramMap) {
+		return sqlSession.selectOne("selectUserNickname", paramMap);
+	}
+
+	@Override
+	public int checkUserEmail(Map<String, Object> paramMap) {
+		return sqlSession.selectOne("selectUserEmail", paramMap);
+	}
+
+	@Override
+	public int loginUser(Map<String, Object> paramMap) {
+		return sqlSession.selectOne("selectUser", paramMap);
 	}
 
 }
